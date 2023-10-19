@@ -1,0 +1,22 @@
+# activate venv, install dependencies
+python -m pip install requests
+python -m pip install tqdm
+
+# matterport url - model is MFCTLvhXupi
+https://my.matterport.com/show/?m=MFCTLvhXupi
+
+# python download command - basic
+python matterport-dl.py "https://my.matterport.com/show/?m=MFCTLvhXupi"
+
+# python download command - advanced - use this
+python matterport-dl.py "https://my.matterport.com/show/?m=MFCTLvhXupi" --advanced-download
+
+# view house
+python matterport-dl.py MFCTLvhXupi 127.0.0.1 8080
+
+# alternative view house
+# go into house model folder
+cd MFCTLvhXupi
+
+# launch local server
+python -m http.server 8080
